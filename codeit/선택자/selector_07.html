@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class (가상 클래스)</title>
+</head>
+<body>
+    <div class="div1">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+    </div>
+</body>
+</html>
+
+<style>
+    .div1 p:nth-child(3) {
+        color: blue;
+    }
+
+    .div1 p:first-child {
+        color: red;
+    }
+
+    .div1 p:last-child {
+        color: green;
+    }
+
+    .div1 p:not(:last-child) {
+        font-size: 150%;
+    }
+
+    .div1 p:not(:first-child) {
+        text-decoration: line-through;
+    }
+</style>
